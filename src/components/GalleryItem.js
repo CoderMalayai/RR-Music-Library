@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 function GalleryItem(props){
     let [view, setView] = useState(false)
@@ -31,10 +32,10 @@ function GalleryItem(props){
                 'backgroundSize': 'cover',
                 'color': 'white'
             }}>
-                <h2>{props.item.trackName}</h2>
-                <h3>{props.item.collectionName}</h3>
-                <h4>{props.item.primaryGenreName}</h4>
-                <h4>{props.item.releaseDate}</h4>
+                <h2>{props.d.trackName}</h2>
+                <h3>{props.d.collectionName}</h3>
+                <h4>{props.d.primaryGenreName}</h4>
+                <h4>{props.d.releaseDate}</h4>
             </div>
         )
     }
